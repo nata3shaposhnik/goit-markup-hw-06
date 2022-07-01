@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>HomeWork5</title>
+    <title>HomeWork6</title>
     <link
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
@@ -508,6 +508,20 @@
               </li>
             </ul>
           </div>
+          <div class="container-address">
+            <p class="description-footer">Подпишитесь на рассылку</p>
+            <form class="form-footer">
+              <label class="form-footer-label">
+                <input class="form-input-mail" type="email" name="mail" placeholder="E-mail" />
+              </label>
+              <button class="footer-button" type="button">
+                Подписаться
+                <svg class="icon-footer-send">
+                  <use href="./images/icons.svg#icon-icon-send"></use>
+                </svg>
+              </button>
+            </form>
+          </div>
         </div>
       </div>
     </footer>
@@ -518,6 +532,57 @@
             <use href="./images/icons.svg#icon-close"></use>
           </svg>
         </button>
+        <p class="modal-description">Оставьте свои данные, мы вам перезвоним</p>
+        <form class="modal-form">
+          <ul class="modal-list">
+            <li class="modal-item">
+              <label class="modal-form-label">
+                <input class="modal-form-input" type="text" name="name" />
+                <svg class="modal-form-svg">
+                  <use href="./images/icons.svg#icon-person-black"></use>
+                </svg>
+                Имя
+              </label>
+            </li>
+            <li class="modal-item">
+              <label class="modal-form-label">
+                <input class="modal-form-input" type="tel" name="tel" />
+                <svg class="modal-form-svg">
+                  <use href="./images/icons.svg#icon-phone-black"></use>
+                </svg>
+                Телефон
+              </label>
+            </li>
+            <li class="modal-item">
+              <label class="modal-form-label">
+                <input class="modal-form-input" type="email" name="mail" />
+                <svg class="modal-form-svg">
+                  <use href="./images/icons.svg#icon-email-black"></use>
+                </svg>
+                Почта
+              </label>
+            </li>
+            <li class="modal-item">
+              <label class="modal-form-label">
+                <textarea
+                  class="modal-form-textarea"
+                  name="comment"
+                  cols="30"
+                  rows="10"
+                  placeholder="Введите текст"
+                ></textarea>
+                Комментарий
+              </label>
+            </li>
+          </ul>
+          <label class="modal-form-checkbox">
+            <input class="checkbox" type="checkbox" name="agree" />
+            <span class="checkbox-icon"></span>
+            Соглашаюсь с рассылкой и принимаю
+            <a class="link-form" href="/">Условия договора</a>
+          </label>
+          <button class="button-form" type="submit">Отправить</button>
+        </form>
       </div>
     </div>
     <script src="./js/modal.js"></script>
