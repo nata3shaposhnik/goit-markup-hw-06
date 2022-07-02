@@ -763,9 +763,13 @@ img {
   fill: var(--accent-color);
 }
 
+.modal-form {
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
 .modal-description {
   margin: 0;
-  margin-bottom: 12px;
   font-weight: 700;
   font-size: 20px;
   line-height: 1.15;
@@ -774,46 +778,54 @@ img {
   color: var(--title-text-color);
 }
 
-.modal-form {
-  padding-left: 40px;
-  padding-right: 40px;
+.modal-item {
+  position: relative;
 }
 
 .modal-form-label {
-  display: flex;
-  flex-direction: column-reverse;
-  position: relative;
+  display: block;
+  margin-top: 28px;
+}
+
+.modal-item:not(:last-child) {
+  margin-bottom: 10px;
 }
 
 .modal-form-label:focus-within > .modal-form-svg {
   fill: var(--accent-color);
 }
 
-.modal-form-input {
-  width: 100%;
-  margin-top: 4px;
-  height: 40px;
-  border: 1px solid rgba(33, 33, 33, 0.2);
-  border-radius: 4px;
-}
-
-.modal-form-input:not(:last-child) {
-  margin-bottom: 10px;
+.label-text {
+  position: absolute;
+  top: -50%;
+  left: 0;
 }
 
 .modal-form-svg {
   position: absolute;
   width: 18px;
   height: 18px;
-  top: 55%;
+  top: 50%;
   left: 12px;
-  transform: translateY(-55%);
+  transform: translateY(-50%);
   fill: #000;
 }
 
+.modal-form-input {
+  width: 100%;
+  height: 40px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+}
+
+.label-textarea {
+  position: absolute;
+  top: -25%;
+  left: 0;
+  transform: translateY(125%);
+}
 .modal-form-textarea {
   margin-bottom: 20px;
-  margin-top: 4px;
   resize: none;
   width: 100%;
   height: 130px;
@@ -822,6 +834,8 @@ img {
 }
 
 .modal-form-textarea::placeholder {
+  padding-top: 12px;
+  padding-left: 16px;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.01em;
