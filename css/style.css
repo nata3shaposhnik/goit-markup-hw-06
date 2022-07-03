@@ -459,11 +459,8 @@ img {
 .footer-wraper {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
   padding: 0;
-}
-
-.container-address + .container-address {
-  margin-left: 70px;
 }
 
 .footer {
@@ -554,6 +551,7 @@ img {
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
   background-color: var(--third-background-color);
+  color: var(--secondary-title-color);
 }
 
 .form-footer-label:focus-within > .form-input-mail {
