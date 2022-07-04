@@ -534,47 +534,45 @@
         </button>
         <p class="modal-description">Оставьте свои данные, мы вам перезвоним</p>
         <form class="modal-form">
-          <ul class="modal-list">
-            <li class="modal-item">
-              <label class="modal-form-label">
-                <input class="modal-form-input" type="text" name="name" />
-                <svg class="modal-form-svg">
-                  <use href="./images/icons.svg#icon-person-black"></use>
-                </svg>
-                <span class="label-text">Имя</span>
-              </label>
-            </li>
-            <li class="modal-item">
-              <label class="modal-form-label">
-                <input class="modal-form-input" type="tel" name="tel" />
-                <svg class="modal-form-svg">
-                  <use href="./images/icons.svg#icon-phone-black"></use>
-                </svg>
-                <span class="label-text">Телефон</span>
-              </label>
-            </li>
-            <li class="modal-item">
-              <label class="modal-form-label">
-                <input class="modal-form-input" type="email" name="mail" />
-                <svg class="modal-form-svg">
-                  <use href="./images/icons.svg#icon-email-black"></use>
-                </svg>
-                <span class="label-text">Почта</span>
-              </label>
-            </li>
-            <li class="modal-item">
-              <label class="modal-form-label">
-                <textarea
-                  class="modal-form-textarea"
-                  name="comment"
-                  cols="30"
-                  rows="10"
-                  placeholder="Введите текст"
-                ></textarea>
-                <span class="label-textarea">Комментарий</span>
-              </label>
-            </li>
-          </ul>
+          <div class="modal-group">
+            <label class="modal-form-label">
+              <input class="modal-form-input" type="text" name="name" />
+              <svg class="modal-form-svg">
+                <use href="./images/icons.svg#icon-person-black"></use>
+              </svg>
+              <span class="label-text">Имя</span>
+            </label>
+          </div>
+          <div class="modal-group">
+            <label class="modal-form-label">
+              <input class="modal-form-input" type="tel" name="tel" />
+              <svg class="modal-form-svg">
+                <use href="./images/icons.svg#icon-phone-black"></use>
+              </svg>
+              <span class="label-text">Телефон</span>
+            </label>
+          </div>
+          <div class="modal-group">
+            <label class="modal-form-label">
+              <input class="modal-form-input" type="email" name="mail" />
+              <svg class="modal-form-svg">
+                <use href="./images/icons.svg#icon-email-black"></use>
+              </svg>
+              <span class="label-text">Почта</span>
+            </label>
+          </div>
+          <div class="modal-group textarea">
+            <label class="modal-form-label">
+              <textarea
+                class="modal-form-textarea"
+                name="comment"
+                cols="30"
+                rows="10"
+                placeholder="Введите текст"
+              ></textarea>
+              <span class="label-textarea">Комментарий</span>
+            </label>
+          </div>
           <label class="modal-form-checkbox">
             <input class="checkbox" type="checkbox" name="agree" />
             <span class="checkbox-icon"></span>
